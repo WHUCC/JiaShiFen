@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/record_dailog"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <co.lujun.androidtagview.TagContainerLayout
+                app:container_max_lines = "1"
+                android:id="@+id/dialog_tag_top"
+                style="@style/Tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:tag="标签"
+                app:tag_text_color="@color/tag" />
+
+            <LinearLayout
+                android:id="@+id/lll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_tag_top"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/dialog_editext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="添加标签"
+                    android:textColor="#d1d2d1"
+                    android:textColorHint="@color/record_hint" />
+
+                <ImageButton
+                    android:id="@+id/dialog_tag_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorTranplant"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tag_change" />
+
+            </LinearLayout>
+
+            <co.lujun.androidtagview.TagContainerLayout
+
+                android:id="@+id/dialog_tag_bottom"
+                style="@style/Tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lll" />
+
+            <Button
+                android:id="@+id/dialog_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/dialog_tag_bottom"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/confirm_shape"
+                android:text="保存"
+                android:textColor="@color/tag"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

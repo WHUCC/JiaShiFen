@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#33000000</color>
+    <color name="colorTranplant">#00000000</color>
+    <color name="swipeoption_green">#36CF8E</color>
+    <color name="swipeoption_blue">#3693D0</color>
+    <color name="swipeoption_purple">#ff1744</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="rect">#03A9F4</color>
+    <color name="all">#03a9f4</color>
+    <color name="white">#ffffff</color>
+    <color name="record_hint">#cdcdcd</color>
+    <color name="tag">#d1d2d1</color>
+    <color name="tag_bk">#40b2f8c5</color>
+    <color name="tag_broad">#c57fe7e9</color>
+    <color name="tag_back">#20b2f8c5</color>
+    <color name="square_bk">#b87fe7e9</color>
+    <color name="test">#97c5c53d</color>
+    <color name="immerseHost">#ef3614</color>
+    <color name="immerseAdd">#97094b48</color>
+    <color name="immerseBrowse">#085959</color>
+
+
+
+</resources>

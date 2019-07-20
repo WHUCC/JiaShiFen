@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/splashbackground"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/conteiner_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/main_top"
+                android:gravity="center_horizontal"
+                android:minHeight="?attr/actionBarSize" />
+
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorTranplant"
+                android:gravity="center"
+                android:minHeight="?attr/actionBarSize"
+                android:text="VAILING"
+                android:textColor="#d1d2d1"
+                android:textSize="18sp"
+            />
+
+        </io.codetail.widget.RevealFrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|bottom"
+            android:scrollbarThumbVertical="@android:color/transparent">
+
+            <GridLayout
+                android:id="@+id/left_drawer"
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:columnCount="1"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:orientation="vertical">
+                <!-- Layout of Drawer -->
+            </GridLayout>
+
+        </ScrollView>
+
+        <!--android:layout_alignParentLeft="true"-->
+        <!--<item name="android:layout_alignParentEnd">true</item>-->
+        <!--<item name="android:background">@drawable/main_bottom</item>-->
+        <!--<item name="android:textSize">18sp</item>-->
+        <!--<item name="android:gravity">bottom</item>-->
+        <!--<item name="android:textColor">#fff</item>>-->
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
+

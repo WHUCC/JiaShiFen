@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/browse_bk">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:orientation="vertical">
+
+                <ListView
+
+                    android:id="@+id/browse_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/main_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:background="@drawable/main_bottom"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/last_day"
+                        style="@style/ChooseButton"
+                        android:text="最近一天" />
+
+                    <Button
+                        android:id="@+id/last_week"
+                        style="@style/ChooseButton"
+                        android:text="最近一周" />
+
+                    <Button
+                        android:id="@+id/last_mounth"
+                        style="@style/ChooseButton"
+                        android:text="最近一月" />
+
+                    <Button
+                        android:id="@+id/browse_date"
+                        style="@style/ChooseButton"
+                        android:text="日期" />
+
+
+                    <Button
+                        android:id="@+id/browse_study"
+                        style="@style/ChooseButton"
+                        android:text="学习顺序" />
+
+                    <Button
+                        android:id="@+id/classify_tag"
+                        style="@style/ChooseButton"
+                        android:text="学科分类" />
+                    <Button
+                        android:id="@+id/browse_level"
+                        style="@style/ChooseButton"
+
+                        android:text="今天学习" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>

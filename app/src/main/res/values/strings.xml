@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Jiashifen</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="add_record">添加记录</string>
+    <string name="host_page">主页</string>
+    <string name="record_browse">记录浏览</string>
+</resources>

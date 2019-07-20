@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/record_bk">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:padding="@dimen/padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View style="@style/LineView"></View>
+
+                <TextView
+                    style="@style/TextViewBack"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="标题" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+
+                        android:id="@+id/mark"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/add_record_mark" />
+
+                    <EditText
+                        android:id="@+id/record_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/mark"
+                        android:background="@null"
+                        android:hint="请输入标题"
+                        android:imeOptions="flagNoExtractUi"
+                        android:maxLines="1"
+                        android:textColor="#d1d2d1"
+                        android:textColorHint="@color/record_hint" />
+
+                </RelativeLayout>
+
+                <View style="@style/LineView"></View>
+
+                <TextView
+                    style="@style/TextViewBack"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="文字描述" />
+
+                <View
+                    style="@style/LineView"
+                    android:layout_marginTop="@dimen/padding"></View>
+
+                <EditText
+                    android:id="@+id/record_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="请输入文字描述"
+                    android:imeOptions="flagNoExtractUi"
+                    android:maxLines="10"
+                    android:textColor="#d1d2d1"
+                    android:textColorHint="@color/record_hint" />
+
+                <View
+                    style="@style/LineView"
+                    android:layout_marginTop="@dimen/padding"></View>
+
+                <TextView
+                    android:id="@+id/picture_describe"
+                    style="@style/TextViewBack"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="图片描述" />
+
+                <View
+                    style="@style/LineView"
+                    android:layout_marginTop="@dimen/padding"></View>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding">
+
+                    <GridLayout
+                        android:id="@+id/record_gridlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:rowCount="1"></GridLayout>
+                </HorizontalScrollView>
+
+                <View
+                    style="@style/LineView"
+                    android:layout_marginTop="@dimen/padding"></View>
+
+                <TextView
+                    android:id="@+id/mark_tv"
+                    style="@style/TextViewBack"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="标签选择" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding">
+
+                    <co.lujun.androidtagview.TagContainerLayout
+                        android:id="@+id/record_tag"
+                        style="@style/Tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        app:container_max_lines="1" />
+
+                    <ImageButton
+                        android:id="@+id/tag_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorTranplant"
+                        android:src="@drawable/tag_change" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/LineView"
+                    android:layout_marginTop="@dimen/padding"></View>
+
+                <Button
+                    android:id="@+id/record_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/dialog_tag_bottom"
+                    android:layout_marginTop="@dimen/padding"
+                    android:background="@drawable/confirm_shape"
+                    android:text="保存"
+                    android:textColor="@color/tag"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MySquareMenu">
+        <attr name="mfabColor" format="integer"></attr>
+        <attr name="mfabIcon" format="reference|color"></attr>
+        <attr name="mfabSize" format="integer"></attr>
+        <attr name="miconM1" format="reference|color"></attr>
+        <attr name="miconM2" format="reference|color"></attr>
+        <attr name="miconM3" format="reference|color"></attr>
+        <attr name="mmenuOpenDirection" format="string"></attr>
+
+    </declare-styleable>
+    <declare-styleable name="MyThumbnail">
+        <attr name="originalPath" format="string"></attr>
+    </declare-styleable>
+    <!--public static final int SquareMenu_fabColor = 0;-->
+    <!--public static final int SquareMenu_fabSize = 1;-->
+    <!--public static final int SquareMenu_iconM1 = 3;-->
+    <!--public static final int SquareMenu_iconM2 = 4;-->
+    <!--public static final int SquareMenu_iconM3 = 5;-->
+    <!--public static final int SquareMenu_menuOpenDirection = 2;-->
+</resources>

@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_shape"
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <ImageButton
+        android:id="@+id/choose_ib"
+        android:scaleType="fitCenter"
+        android:background="@color/colorTranplant"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/flower" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <co.lujun.androidtagview.TagContainerLayout
+
+            android:id="@+id/choose_item_tag"
+            style="@style/Tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            app:container_background_color="@color/colorTranplant"
+            app:container_border_color="@color/colorTranplant"
+            app:container_enable_drag="false"
+            app:container_max_lines="1" />
+
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+    jcenter()
+    maven {
+        url "https://maven.google.com"
+    }
+
+}
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "cn.vailing.chunqiu.jiashifen"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 20
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.yalantis:sidemenu:1.0'
+    compile 'com.github.ozodrukh:CircularReveal:1.0.4'
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'cn.finalteam.rxgalleryfinal:library:1.0.9'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile files('libs/Xutils3.0.jar')
+    compile 'co.lujun:androidtagview:1.1.4'
+    compile 'com.github.satyan:sugar:1.5'
+    compile 'com.devs:squaremenu:1.0.0'
+    compile 'com.nantaphop:hoverTouchView:0.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile 'com.andrognito.patternlockview:patternlockview:1.0.0'
+}

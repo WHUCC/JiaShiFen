@@ -1,0 +1,50 @@
+<resources>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextViewBack">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/text_bk</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#d1d2d1</item>
+    </style>
+
+    <style name="LineView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:background">#59a195</item>
+    </style>
+
+    <style name="ChooseButton">
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/confirm_shape</item>
+        <item name="android:textColor">#d1d2d1</item>
+    </style>
+
+    <style name="Tag">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="container_enable_drag">true</item>
+        <item name="horizontal_interval">10dp</item>
+        <item name="tag_clickable">true</item>
+        <item name="tag_theme">none</item>
+        <item name="vertical_interval">10dp</item>
+        <item name="tag_text_color">@color/tag</item>
+        <item name="tag_border_color">@color/tag_broad</item>
+        <item name="tag_background_color">@color/tag_bk</item>
+        <item name="container_background_color">@color/tag_back</item>
+        <item name="tag_max_length">8</item>
+    </style>
+</resources>

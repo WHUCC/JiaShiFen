@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bk">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:id="@+id/sv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:padding="@dimen/padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View style="@style/LineView"></View>
+
+                    <TextView
+                        style="@style/TextViewBack"
+                        android:layout_marginTop="@dimen/padding"
+                        android:text="描述" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:id="@+id/host_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding"
+                        android:maxLines="10"
+                        android:textColor="#d1d2d1" />
+
+                    <View style="@style/LineView"></View>
+
+                    <TextView
+                        style="@style/TextViewBack"
+                        android:layout_marginTop="@dimen/padding"
+                        android:text="图片描述" />
+
+                    <HorizontalScrollView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding">
+
+                        <GridLayout
+
+                            android:id="@+id/host_gridlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnCount="4"
+                            android:rowCount="2"></GridLayout>
+                    </HorizontalScrollView>
+
+                    <View style="@style/LineView"></View>
+
+                    <TextView
+                        style="@style/TextViewBack"
+                        android:layout_marginTop="@dimen/padding"
+                        android:text="标签" />
+
+                    <co.lujun.androidtagview.TagContainerLayout
+                        android:id="@+id/host_tag"
+                        style="@style/Tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        app:container_max_lines="1" />
+                    <!--<cn.vailing.chunqiu.jiashifen.view.MyThumbnail-->
+                    <!--android:id="@+id/pic1"-->
+                    <!--android:layout_width="128dp"-->
+                    <!--android:layout_height="128dp"-->
+                    <!--android:src="@drawable/chu" />-->
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <RelativeLayout
+                android:id="@+id/host_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/main_none">
+                <TextView
+                    android:id="@+id/host_tip"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="请尽量回想该知识点！\n点击屏幕可以查看答案！"
+                    android:textColor="#d1d2d1"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/main_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_bottom"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding">
+
+                <Button
+                    android:id="@+id/host_certain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/confirm_shape"
+                    android:text="认识"
+                    android:textColor="#d1d2d1" />
+
+                <Button
+                    android:id="@+id/host_vague"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/confirm_shape"
+                    android:text="模糊"
+                    android:textColor="#d1d2d1" />
+
+                <Button
+                    android:id="@+id/host_forget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/confirm_shape"
+                    android:text="忘记"
+                    android:textColor="#d1d2d1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>

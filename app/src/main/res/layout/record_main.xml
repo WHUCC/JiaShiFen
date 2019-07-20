@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/record_info_bk">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:id="@+id/sv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:padding="@dimen/padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View style="@style/LineView"></View>
+
+                    <TextView
+                        style="@style/TextViewBack"
+                        android:layout_marginTop="@dimen/padding"
+                        android:text="描述" />
+
+                    <TextView
+                        android:id="@+id/record_info_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding"
+                        android:maxLines="10"
+                        android:textColor="#d1d2d1"
+                        android:textSize="18sp" />
+
+                    <View style="@style/LineView"></View>
+
+                    <TextView
+                        style="@style/TextViewBack"
+                        android:layout_marginTop="@dimen/padding"
+                        android:text="图片描述" />
+
+                    <HorizontalScrollView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding">
+
+                        <GridLayout
+
+                            android:id="@+id/record_info_gridlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnCount="4"
+                            android:rowCount="2"></GridLayout>
+                    </HorizontalScrollView>
+
+                    <View style="@style/LineView"></View>
+
+                    <TextView
+                        style="@style/TextViewBack"
+                        android:layout_marginTop="@dimen/padding"
+                        android:text="标签" />
+
+                    <co.lujun.androidtagview.TagContainerLayout
+                        android:id="@+id/record_info_tag"
+                        style="@style/Tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        app:container_max_lines="1" />
+
+                    <View style="@style/LineView"></View>
+
+                    <TextView
+                        style="@style/TextViewBack"
+                        android:layout_marginTop="@dimen/padding"
+                        android:text="正确率" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <com.github.mikephil.charting.charts.PieChart
+
+                            android:id="@+id/record_info_pie"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>

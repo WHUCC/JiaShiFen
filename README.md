@@ -1,5 +1,5 @@
 # JiaShiFen
-考研期间设计一款基于艾宾浩斯遗忘算法的复习计划制定app，效果很好，大家可以试试！！！！！
+考研期间设计一款基于艾宾浩斯遗忘算法的复习计划制定app，效果很好，大家可以试试！！！
 ### 1 主界面
 可以点击每个item进入对应科目的复习，也可以点击添加记录，把学习一天的东西全部添加进去。
 ![](https://github.com/vailing/JiaShiFen/blob/master/image/1.jpg) ![](https://github.com/vailing/JiaShiFen/blob/master/image/2.jpg)
